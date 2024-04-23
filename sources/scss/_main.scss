@@ -1,0 +1,90 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  line-height: $line-height;
+}
+
+body {
+  font-family: map-get($font-family, 'Inter');
+  color: map-get($colors, "white");
+  background: map-get($colors, "black");
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  max-width: 384px;
+  width: 100%;
+  height: fit-content;
+  border-radius: map-get($border-radius, "card");
+  background: map-get($colors, "dark-grey");
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 24px;
+  margin: 0 20px;
+  padding: 24px;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    padding: 40px;
+  }
+
+  &__image {
+    width: 88px;
+    height: 88px;
+    border-radius: map-get($border-radius, "profile-image");
+    margin: 0 auto;
+  }
+
+  &__container-identity {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__name {
+    font-size: map-get($font-size, "heading");
+    font-weight: map-get($font-weight, "semi-bold");
+    margin: 0;
+  }
+
+  &__location {
+    font-size: map-get($font-size, "body");
+    font-weight: map-get($font-weight, "bold");
+    color: map-get($colors, "neon-green");
+  }
+
+  &__description {
+    font-size: map-get($font-size, "body");
+  }
+
+  &__social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__link {
+      width: 100%;
+      font-size: map-get($font-size, "body");
+      font-weight: map-get($font-weight, "bold");
+      color: map-get($colors, "white");
+      background: map-get($colors, "grey");
+      border-radius: map-get($border-radius, "card");
+      padding: 12px;
+
+      &:hover {
+        color: map-get($colors, "grey");
+        background: map-get($colors, "neon-green");
+        transition: color 0.5s cubic-bezier(0.25, 1, 0.5, 1),
+        background 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+      }
+    }
+  }
+}

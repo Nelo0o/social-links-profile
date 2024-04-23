@@ -1,0 +1,27 @@
+/* Color styles */
+$colors: (
+        "black": #141414,
+        "dark-grey": #1F1F1F,
+        "grey": #333333,
+        "white": #FFFFFF,
+        "neon-green": #C4F82A,
+);
+
+/* Text styles */
+$font-family: (
+        "Inter": "Inter",
+);
+$font-size: (
+        "body": 14px,
+        "heading": 24px,
+);
+$font-weight: (
+        "regular": 400,
+        "semi-bold": 600,
+        "bold": 700,
+);
+$line-height: 150%;
+$border-radius: (
+        "card": 12px,
+        "profile-image": 50%,
+);
