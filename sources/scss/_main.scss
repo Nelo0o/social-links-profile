@@ -13,14 +13,17 @@ body {
   font-family: map-get($font-family, 'Inter');
   color: map-get($colors, "white");
   background: map-get($colors, "black");
-  height: 100vh;
+}
+
+main {
+  height: 100svh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .profile-card {
-  max-width: 384px;
+  max-width: 327px;
   width: 100%;
   height: fit-content;
   border-radius: map-get($border-radius, "card");
@@ -31,7 +34,8 @@ body {
   gap: 24px;
   margin: 0 20px;
   padding: 24px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 425px) {
+    max-width: 384px;
     margin: 0;
     padding: 40px;
   }

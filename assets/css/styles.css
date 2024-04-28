@@ -342,14 +342,17 @@ body {
   font-family: "Inter";
   color: #FFFFFF;
   background: #141414;
-  height: 100vh;
+}
+
+main {
+  height: 100svh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .profile-card {
-  max-width: 384px;
+  max-width: 327px;
   width: 100%;
   height: fit-content;
   border-radius: 12px;
@@ -361,8 +364,9 @@ body {
   margin: 0 20px;
   padding: 24px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 425px) {
   .profile-card {
+    max-width: 384px;
     margin: 0;
     padding: 40px;
   }
